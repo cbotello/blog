@@ -6,6 +6,8 @@
     --blanco: #FFFFFF;
     --negro: #000;
 
+    --gris: #e1e1e1;
+
 }
 
 html{
@@ -108,6 +110,33 @@ img{
     color: var(--blanco);   
 }
 
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
 @media (min-width: 768px){
     .barra{
         display: flex; 
@@ -129,9 +158,10 @@ img{
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+    .boton{
+        display: inline-block;
+    }
 }
-
-
 
 
 
