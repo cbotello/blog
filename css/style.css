@@ -39,7 +39,7 @@ a{
 
 h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
-    line-height: 1.2rem;
+    line-height: 3rem;
 }
 
 h1{
@@ -77,6 +77,10 @@ img{
 }
 
 /*header*/
+
+.barra{
+    padding-top: 4rem;
+}
 
 .header{
     background-image: url(/img/banner.jpg);
@@ -168,6 +172,13 @@ img{
 .widget-curso__label, .widget-curso__info{
     font-size: 2rem;
 }
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
 
 @media (min-width: 768px){
     .barra{
