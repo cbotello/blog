@@ -39,7 +39,7 @@ a{
 
 h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
-    line-height: 3rem;
+    line-height: 6rem;
 }
 
 h1{
@@ -135,7 +135,11 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
 
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton--primario{
@@ -186,6 +190,40 @@ img{
 
 .curso:last-of-type{
     border: none;
+}
+
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea{
+    height: 20rem;
 }
 
 @media (min-width: 768px){
